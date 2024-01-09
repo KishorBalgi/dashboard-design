@@ -15,9 +15,9 @@ select {
 
 select {
   background-image: url("/src/assets/icons/arrow-dropdown.svg");
-  background-size: 8px;
+  background-size: 10px;
   background-repeat: no-repeat;
-  background-position: calc(100% - 20px) center;
+  background-position: calc(100% - 16px) center;
 }
 
 #side-bar::-webkit-scrollbar {
