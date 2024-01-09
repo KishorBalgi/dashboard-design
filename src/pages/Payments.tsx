@@ -3,7 +3,7 @@ import TransactionsTable from "../components/payments/TransactionsTable";
 
 const PaymentsPage = () => {
   return (
-    <div className="p-8">
+    <div className="p-8 bg-[#fafafa]">
       <div className="flex items-center justify-between">
         <h2 className=" text-xl font-medium">Overview</h2>
 
