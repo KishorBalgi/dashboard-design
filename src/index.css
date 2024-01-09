@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
+/* body {
   background-color: #fafafa;
-}
+} */
 
 select {
   -webkit-appearance: none;
@@ -17,7 +17,7 @@ select {
   background-image: url("/src/assets/icons/arrow-dropdown.svg");
   background-size: 10px;
   background-repeat: no-repeat;
-  background-position: calc(100% - 16px) center;
+  background-position: calc(100% - 14px) center;
 }
 
 #side-bar::-webkit-scrollbar {

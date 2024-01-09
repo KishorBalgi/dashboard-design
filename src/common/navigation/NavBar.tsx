@@ -8,13 +8,13 @@ const NavBar = () => {
     <header className="grid grid-cols-3 bg-white py-3 px-8 shadow-sm sticky">
       {/* Title */}
       <div className="justify-self-start self-start flex gap-4 items-center py-2">
-        <h1 className="text-[15px]">Payments</h1>
+        <h1 className="text-[15px] text-[#1A181E] font-medium">Payments</h1>
 
-        <div className="flex flex-row items-center gap-1">
+        <div className="flex flex-row items-center gap-1 ">
           <button>
             <img className="w-4" src={help} alt="help" />
           </button>
-          <p className="text-xs">How it works</p>
+          <p className="text-xs text-[#4D4D4D]">How it works</p>
         </div>
       </div>
 
@@ -33,10 +33,10 @@ const NavBar = () => {
       {/* Nav Menu */}
       <div className="justify-self-end">
         <ul className="flex items-center gap-2">
-          <li className="flex justify-center w-10 h-10 rounded-full bg-gray-light">
+          <li className="flex justify-center w-10 h-10 rounded-full bg-[#E6E6E6]">
             <img className="w-4" src={anouncement} alt="anouncement" />
           </li>
-          <li className="flex justify-center w-10 h-10 rounded-full bg-gray-light">
+          <li className="flex justify-center w-10 h-10 rounded-full bg-[#E6E6E6]">
             <img className="w-3" src={polygon} alt="polygon" />
           </li>
         </ul>

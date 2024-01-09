@@ -9,9 +9,9 @@ const PaymentsPage = () => {
 
         {/* Select Time range */}
         <div className=" flex justify-end">
-          <select className="bg-white  text-gray-900 text-sm rounded-md block w-32 px-2.5 py-2 outline-none border border-gray-200">
-            <option value={"last30Days"}>This Month</option>
-            <option value={"lastYear"}>This Year</option>
+          <select className="bg-white  text-gray-900 text-md rounded-md block w-32 px-2.5 py-2 outline-none border border-gray-200">
+            <option value={"last30Days"}>Last Month</option>
+            <option value={"lastYear"}>Last Year</option>
             <option value={"allTime"}>All Time</option>
           </select>
         </div>

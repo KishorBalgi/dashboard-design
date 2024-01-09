@@ -101,8 +101,8 @@ const SideBar = () => {
             {menuItems.map((item) => (
               <li key={item.name}>
                 <button
-                  className={`w-full flex flex-row items-center gap-3 font-medium px-4 py-2 rounded-md hover:bg-gray-700 opacity-80 hover:opacity-100 ${
-                    item.name === active && "bg-gray-600 opacity-100"
+                  className={`w-full text-white opacity-80 flex flex-row items-center gap-3 font-medium px-4 py-2 rounded-md ${
+                    item.name === active && "bg-[#ffffff23] !opacity-100"
                   }`}
                   onClick={() => setActive(item.name)}
                 >
@@ -116,8 +116,8 @@ const SideBar = () => {
       </div>
 
       {/* Credits */}
-      <button className=" flex items-center gap-2 px-1.5 py-3 bg-[#353C53] rounded-md">
-        <div className=" p-1.5 bg-slate-600 rounded-md">
+      <button className=" flex items-center gap-2 px-3 py-1.5 bg-[#353C53] rounded-md">
+        <div className=" p-1.5 bg-white bg-opacity-10 rounded-md">
           <img src={wallet} alt="wallet" />
         </div>
         <div>

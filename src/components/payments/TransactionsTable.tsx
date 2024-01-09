@@ -46,16 +46,16 @@ const TransactionsTable = () => {
       <h2 className=" text-xl font-medium">Transactions | This Month</h2>
 
       {/* Table Container */}
-      <div className="bg-white rounded-md p-4 my-4 shadow-sm">
+      <div className="bg-white rounded-md p-4 my-6 shadow-sm">
         {/* Actions Bar */}
         <div className="flex justify-between">
           {/* Search Bar */}
           <div className="justify-self-center">
-            <div className="flex gap-2 items-center bg-white border border-gray-200 rounded-md px-4 py-2 w-96">
+            <div className="w-[250px] flex gap-2 items-center bg-white border border-gray-200 rounded-md px-4 py-2">
               <img src={search} alt="search" />
               <input
                 type="text"
-                className="flex-1 bg-white outline-none"
+                className="w-full bg-white outline-none"
                 placeholder="Search by Order ID..."
               />
             </div>
@@ -78,19 +78,19 @@ const TransactionsTable = () => {
           <table className="w-full my-4">
             <thead>
               <tr className="text-center rounded-md opacity-80">
-                <th className="font-medium px-[14px] py-3 text-left bg-gray-200 rounded-s-md">
+                <th className="font-medium px-[14px] py-3 text-left bg-[#F2F2F2] rounded-s-md">
                   Order ID
                 </th>
-                <th className="flex items-center gap-1 justify-center font-medium px-[14px] py-3 bg-gray-200">
+                <th className="flex items-center gap-1 justify-center font-medium px-[14px] py-3 bg-[#F2F2F2]">
                   Order Date
                   <button>
                     <img className="w-2.5" src={polygon} alt="sort" />
                   </button>
                 </th>
-                <th className="font-medium px-[14px] py-3 text-right bg-gray-200">
+                <th className="font-medium px-[14px] py-3 text-right bg-[#F2F2F2]">
                   Order amount
                 </th>
-                <th className="flex items-center justify-end  gap-1 font-medium px-[14px] py-3 bg-gray-200 rounded-e-md">
+                <th className="flex items-center justify-end  gap-1 font-medium px-[14px] py-3 bg-[#F2F2F2] rounded-e-md">
                   Transaction Fees
                   <button>
                     <img src={info} alt="info" />
@@ -106,7 +106,7 @@ const TransactionsTable = () => {
                     key={transaction.order_id}
                     className="text-center border-b hover:bg-gray-50"
                   >
-                    <td className="text-primary font-medium px-[14px] py-3 text-left">
+                    <td className="text-[#146EB4] font-medium px-[14px] py-3 text-left">
                       {transaction.order_id}
                     </td>
                     <td className="px-[14px] py-3">
