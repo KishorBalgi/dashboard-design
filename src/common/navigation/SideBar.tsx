@@ -70,14 +70,17 @@ const SideBar = () => {
   const [active, setActive] = useState("Payments");
 
   return (
-    <div className="w-[224px] h-screen flex flex-col justify-between text-white bg-secondary px-2.5 py-4 sticky">
+    <div
+      id="side-bar"
+      className="w-[224px] h-screen flex flex-col justify-between gap-5 text-white bg-secondary px-2.5 py-4 sticky overflow-y-scroll"
+    >
       {/* Header */}
       <div className="flex flex-col gap-6">
         <div className="flex justify-between px-1">
           <div className="flex gap-3">
             <img className="rounded-md" src={store} alt="store_img" />
             <div>
-              <h1 className="text-[15px] font-semibold">Nishyan</h1>
+              <h1 className="text-[15px] font-medium">Nishyan</h1>
               <a
                 className="text-[13px] underline underline-offset-4 opacity-80"
                 href="#"
@@ -94,11 +97,11 @@ const SideBar = () => {
 
         {/* Menu Itemd */}
         <div>
-          <ul className="w-full flex flex-col">
+          <ul className="w-full flex flex-col text-sm">
             {menuItems.map((item) => (
               <li key={item.name}>
                 <button
-                  className={`w-full flex flex-row items-center gap-2 px-4 py-2 rounded-md hover:bg-gray-700 opacity-80 hover:opacity-100 ${
+                  className={`w-full flex flex-row items-center gap-3 font-medium px-4 py-2 rounded-md hover:bg-gray-700 opacity-80 hover:opacity-100 ${
                     item.name === active && "bg-gray-600 opacity-100"
                   }`}
                   onClick={() => setActive(item.name)}
@@ -114,12 +117,12 @@ const SideBar = () => {
 
       {/* Credits */}
       <button className=" flex items-center gap-2 px-1.5 py-3 bg-[#353C53] rounded-md">
-        <div className=" p-1.5 bg-slate-500 rounded-md">
+        <div className=" p-1.5 bg-slate-600 rounded-md">
           <img src={wallet} alt="wallet" />
         </div>
         <div>
-          <p className="opacity-80">Available credits</p>
-          <p className="font-semibold text-left">222.10</p>
+          <p className="text-sm opacity-80">Available credits</p>
+          <p className="font-medium text-left">222.10</p>
         </div>
       </button>
     </div>

@@ -5,11 +5,11 @@ const PaymentsPage = () => {
   return (
     <div className="p-8">
       <div className="flex items-center justify-between">
-        <h2 className=" text-xl font-semibold">Overview</h2>
+        <h2 className=" text-xl font-medium">Overview</h2>
 
         {/* Select Time range */}
         <div className=" flex justify-end">
-          <select className="bg-white  text-gray-900 text-sm rounded-lg block w-32 p-2.5 outline-none">
+          <select className="bg-white  text-gray-900 text-sm rounded-md block w-32 px-2.5 py-2 outline-none border border-gray-200">
             <option value={"last30Days"}>This Month</option>
             <option value={"lastYear"}>This Year</option>
             <option value={"allTime"}>All Time</option>
