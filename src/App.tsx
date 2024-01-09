@@ -2,7 +2,7 @@ import "./App.css";
 import DashBoardLayout from "./layout/DashBoardLayout";
 import PaymentsPage from "./pages/Payments";
 
-function App({ children }: { children: React.ReactNode }) {
+function App() {
   return (
     <>
       <DashBoardLayout>
