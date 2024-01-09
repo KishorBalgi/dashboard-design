@@ -5,7 +5,7 @@ import search from "../../assets/icons/search.svg";
 
 const NavBar = () => {
   return (
-    <header className="grid grid-cols-3 bg-white py-3 px-8 shadow-md sticky">
+    <header className="grid grid-cols-3 bg-white py-3 px-8 shadow-sm sticky">
       {/* Title */}
       <div className="justify-self-start self-start flex gap-4 items-center py-2">
         <h1 className="text-[15px]">Payments</h1>
